@@ -48,11 +48,6 @@ function showCart() {
   */
   for (var i = 0; i < 1; i++) {
     var cartTBodyEl = cartTBodyEls[i];
-    //START-CONSOLE-TESTING
-    // var cartItemsLength = cart.items.length;
-    console.log(`cart typeof: ${typeof (cart)}`);
-    console.log(`cart.items typeof: ${typeof (cart.items)}`);
-    //END-CONSOLE-TESTING
     // DONE: Iterate over the items in the cart
     for (var j = 0; j < cart.items.length; j++) {
       // DONE: Create a TR
@@ -80,8 +75,6 @@ function showCart() {
       cartTBodyEl.appendChild(newRowEl);
     }
   }
-
-
 }
 
 function removeItemFromCart(event) {
